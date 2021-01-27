@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import adminNav from "./../../adminNav";
+
 import "./AdminLayout.scss";
 
 import {
@@ -21,7 +24,7 @@ const AdminLayout = (props) => {
       workspace.classList.toggle("absolute");
       workspace.classList.toggle("left-60");
     });
-  }, []);
+  });
 
   return (
     <div>
@@ -41,14 +44,21 @@ const AdminLayout = (props) => {
               </span>
             </div>
             <div>
-              <a
-                href="#"
-                className="hover:bg-gray-200
-               hover:text-black text-white flex justify-center p-2.5 pb-3 cursor-pointer"
-              >
-                <BiTachometer className="text-3xl mt-1" />
-                <span className="ml-2 text-2xl">Dashboard</span>
-              </a>
+              {adminNav.map((nav) => {
+                return (
+                  <NavLink
+                    key={nav.name}
+                    to={nav.to}
+                    exact={nav.exact}
+                    className="hover:bg-red-500 active
+                 hover:text-black text-white flex  p-3 pb-4 cursor-pointer"
+                    activeClassName="bg-red-500"
+                  >
+                   
+                    <span className="ml-4 text-sm">{nav.name}</span>
+                  </NavLink>
+                );
+              })}
             </div>
           </div>
 
@@ -70,7 +80,7 @@ const AdminLayout = (props) => {
               {/* Your contents here */}
               {props.children}
               {/* Your contents till here */}
-              </div>
+            </div>
             <div className="bg-primary w-full h-11 flex justify-between py-2 px-10 text-lg text-white">
               <span className="">Admin panel</span>
               <span className="">Version 1.0.0</span>
