@@ -1,17 +1,19 @@
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import adminNav from "./../../adminNav";
-
+import { adminNav } from "./../nav";
+import Notification from "./../Components/Notifications";
 import "./AdminLayout.scss";
 
 import {
   BsFillBellFill,
   BsFillGrid3X3GapFill,
   BsEnvelope,
-} from "react-icons/bs";
-import { BiTachometer } from "react-icons/bi";
+  BiSquareRounded,
+} from "react-icons/all";
 
 const AdminLayout = (props) => {
+  const [notification, setNotification] = useState([]);
+
   useEffect(() => {
     const sidebarController = document.getElementById("sidebarController");
     const sidebar = document.getElementById("sidebar");
@@ -23,6 +25,28 @@ const AdminLayout = (props) => {
       sidebar.classList.toggle("md:hidden");
       workspace.classList.toggle("absolute");
       workspace.classList.toggle("left-60");
+    });
+
+    document.addEventListener("click", function (e) {
+      let notificationWrapper = document.getElementById("notification");
+      let notificationBtn = document.getElementById("notificationBtn");
+      let messageWrapper = document.getElementById("message");
+      let messageBtn = document.getElementById("messageBtn");
+
+      if (
+        notificationBtn.contains(e.target) ||
+        notificationWrapper.contains(e.target)
+      ) {
+        notificationWrapper.classList.remove("hidden");
+      } else {
+        notificationWrapper.classList.add("hidden");
+      }
+
+      if (messageBtn.contains(e.target) || messageWrapper.contains(e.target)) {
+        messageWrapper.classList.remove("hidden");
+      } else {
+        messageWrapper.classList.add("hidden");
+      }
     });
   });
 
@@ -50,12 +74,13 @@ const AdminLayout = (props) => {
                     key={nav.name}
                     to={nav.to}
                     exact={nav.exact}
-                    className="hover:bg-red-500 active
-                 hover:text-black text-white flex  p-3 pb-4 cursor-pointer"
+                    className="hover:bg-red-500 active hover:text-black text-white flex  p-3 pb-4 cursor-pointer"
                     activeClassName="bg-red-500"
                   >
-                   
-                    <span className="ml-4 text-sm">{nav.name}</span>
+                    <i className="text-lg ml-1">
+                      {nav.icon ? <nav.icon /> : <BiSquareRounded />}
+                    </i>
+                    <span className="ml-3 text-sm">{nav.name}</span>
                   </NavLink>
                 );
               })}
@@ -70,10 +95,28 @@ const AdminLayout = (props) => {
               <label id="sidebarController" className="mb-1 cursor-pointer">
                 <BsFillGrid3X3GapFill className="text-2xl" />
               </label>
-              <div className="md:block hidden">Welcome </div>
+
               <div className="pb-1">
-                <BsFillBellFill className="text-md mr-8 inline" />
-                <BsEnvelope className="text-md m-2 inline" />
+                <BsFillBellFill
+                  id="notificationBtn"
+                  className="text-md mr-8 inline cursor-pointer"
+                />
+                <Notification
+                  id="notification"
+                  title="Notifications"
+                  className="absolute bg-green-900 w-48 right-10 top-14 shadow-md px-3 rounded hidden"
+                  data={notification}
+                />
+                <BsEnvelope
+                  id="messageBtn"
+                  className="text-md m-2 inline cursor-pointer"
+                />
+                <Notification
+                  id="message"
+                  title="Messages"
+                  className="absolute bg-purple-800 w-48 right-0 top-14 shadow-md px-3 rounded hidden"
+                  data={notification}
+                />
               </div>
             </div>
             <div className="p-3 bg-gray-200 h-screen">

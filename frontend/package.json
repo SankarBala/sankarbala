@@ -11,6 +11,7 @@
     "autoprefixer": "^9.8.6",
     "node-sass": "4.14.1",
     "postcss": "^7.0.35",
+    "randomcolor": "^0.6.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
