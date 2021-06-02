@@ -8,7 +8,7 @@ I am a Fullstack Web Developer
 
 [More about me](https://sankarbala.github.io/portfolio/)
 
-[Sankar Bala](/)
+[Sankar Bala](https://sankarbala.github.io/portfolio/)
 ================
 
 *   [Home](https://sankarbala.github.io/portfolio/#hero)
