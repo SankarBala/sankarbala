@@ -1,182 +1,106 @@
-# Sankar Bala 
-## Proffessional FullStack Web Developer
+  Welcome to my portfolio                
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+Hi, I'm Sankar Bala!
+====================
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+I am a Fullstack Web Developer
+------------------------------
 
-## Welcome to my portfolio
-Let's be familiar, I am Sankar
-A Proffessional FullStack Web Developer
+[More about me](#about)
+
+[Sankar Bala](/)
+================
+
+*   [Home](#hero)
+*   [About](#about)
+*   [Skills](#skills)
+*   [Services](#services)
+*   [Portfolio](#portfolio)
+*   [Contact](#contact)
+
+##### Welcome to my portfolio
+
+### Let's be familiar, I am Sankar
+
+###### A Proffessional FullStack Web Developer
 
 My target is client's satisfaction and my satisfaction is to fulfill client's target.
 
-- UL List
+**Projects** I have already done more than 20 projects successfully.
 
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
+**Happy Clients:** All the clients are happy to me for my dedicated working.
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
+**Years of experience** I am engaged in this industry for 5 years.
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
+**Training** I have completed more than 5 training about website and website related technologies.
 
-## Tech
+My Skills
+---------
 
-Dillinger uses a number of open source projects to work properly:
+### Frontend technologies
 
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
+HTML _Complete_
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
+CSS _Advanced_
 
-## Installation
+SCSS _Advanced_
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+Bootstrap_Advanced_
 
-Install the dependencies and devDependencies and start the server.
+Tailwind CSS_Advanced_
 
-```sh
-cd dillinger
-npm i
-node app
-```
+JavaScript _Advanced_
 
-For production environments...
+Jquery _Advanced_
 
-```sh
-npm install --production
-NODE_ENV=production node app
-```
+React JS _Perfect_
 
-## Plugins
+### Backend technologies
 
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
+PHP _Advanced_
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+MySQL _Avarage_
 
-## Development
+Laravel _Advanced_
 
-Want to contribute? Great!
+WordPress Theme Development _Advanced_
 
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
+### Others
 
-Open your favorite Terminal and run these commands.
+Git_As needed_
 
-First Tab:
+SEO _Avarage_
 
-```sh
-node app
-```
+Digital Marketing _Avarage_
 
-Second Tab:
+Photoshop _Advanced_
 
-```sh
-gulp watch
-```
+Adobe XD _Avarage_
 
-(optional) Third:
+MS Office _Avarage_
 
-```sh
-karma test
-```
+Typing Speed _E-30WPM/B-25WPM_
 
-#### Building for source
+Services
+--------
 
-For production release:
+As a person currently I am serving the following services with good quality support.
 
-```sh
-gulp build --prod
-```
+#### Web Design
 
-Generating pre-built zip archives for distribution:
+I can design an responsive, mobile friendly, flexible & fast rendering interactive website for you with different trending technologies.
 
-```sh
-gulp build dist --prod
-```
+#### Web Development
 
-## Docker
+For your business you should be have a good looking well managable website. As well as your website may be able to calculate properly accounting your business. Which we provide at a low cost.
 
-Dillinger is very easy to install and deploy in a Docker container.
+#### Wordpress Theme Development
 
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
+Do you need a website for a low cost. Don't worry wordpress is totally free. And I can build a wordpress theme for your website with a very low cost. It will be very easy to manage. I also train up you.
 
-```sh
-cd dillinger
-docker build -t <youruser>/dillinger:${package.json.version} .
-```
+#### Web Template Design
 
-This will create the dillinger image and pull in the necessary dependencies.
-Be sure to swap out `${package.json.version}` with the actual
-version of Dillinger.
+Do you need web template? I also provide web template design with visual and coding technologies. I have many more ready made web templates if you need.
 
-Once done, run the Docker image and map the port to whatever you wish on
-your host. In this example, we simply map port 8000 of the host to
-port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
 
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
-```
-
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-Verify the deployment by navigating to your server address in
-your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
-
-## License
-
-MIT
-
-**Free Software, Hell Yeah!**
-
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+© Copyright **Sankar**. All Rights Reserved
