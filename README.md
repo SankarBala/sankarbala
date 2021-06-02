@@ -6,17 +6,17 @@ Hi, I'm Sankar Bala!
 I am a Fullstack Web Developer
 ------------------------------
 
-[More about me](#about)
+[More about me](https://sankarbala.github.io/portfolio/)
 
 [Sankar Bala](/)
 ================
 
-*   [Home](#hero)
-*   [About](#about)
-*   [Skills](#skills)
-*   [Services](#services)
-*   [Portfolio](#portfolio)
-*   [Contact](#contact)
+*   [Home](https://sankarbala.github.io/portfolio/#hero)
+*   [About](https://sankarbala.github.io/portfolio/#about)
+*   [Skills](https://sankarbala.github.io/portfolio/#skills)
+*   [Services](https://sankarbala.github.io/portfolio/#services)
+*   [Portfolio](https://sankarbala.github.io/portfolio/#portfolio)
+*   [Contact](https://sankarbala.github.io/portfolio/#contact)
 
 ##### Welcome to my portfolio
 
